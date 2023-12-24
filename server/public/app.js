@@ -1,4 +1,8 @@
+// const ADDR = process.env.ADDR || '127.0.0.1'
+// const PORT = process.env.PORT || 3500
+// const socket = io('ws://' + ADDR + ":" + PORT)
 const socket = io('ws://localhost:3500')
+
 
 const msgInput = document.querySelector('#message')
 const nameInput = document.querySelector('#name')

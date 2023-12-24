@@ -28,17 +28,20 @@ const UsersState = {
 }
 
 const io = new Server(expressServer, {
-  // 跨域
-  cors: {
-    origin: process.env.NODE_ENV === "production" ?
-      false :
-      [
-        // live server 端口
-        "http://localhost:3500",
-        "http://127.0.0.1:3500",
-      ]
-  }
+  cors: { origin: '*' }
 })
+// const io = new Server(expressServer, {
+//   // 跨域
+//   cors: {
+//     origin: process.env.NODE_ENV === "production" ?
+//       false :
+//       [
+//         // live server 端口
+//         "http://localhost:3500",
+//         "http://127.0.0.1:3500",
+//       ]
+//   }
+// })
 
 // 监听事件
 
